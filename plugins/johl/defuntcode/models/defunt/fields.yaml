@@ -1,0 +1,25 @@
+fields:
+    nom:
+        label: Nom
+        type: text
+        required: true
+    prenom:
+        label: Prenom
+        type: text
+        required: true
+    published_at:
+        label: Published date
+        description: When this defunt post was published
+        type: datepicker
+    description:
+        label: Description
+        type: text
+    handler:
+        label: Handler
+        type: dropdown
+    recueillement:
+        label: Recueillement
+        type: dropdown
+    ceremonie:
+        label: Ceremonie
+        type: dropdown

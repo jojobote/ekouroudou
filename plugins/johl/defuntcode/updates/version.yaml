@@ -1,5 +1,7 @@
-0.0.1:
+1.0.1:
     - First version of defuntCode
+1.0.2:
+    - Adding rec cer tables
     - create_recueillements_table.php
     - create_ceremonies_table.php
     - create_defunts_table.php

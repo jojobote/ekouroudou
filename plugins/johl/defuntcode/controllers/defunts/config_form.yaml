@@ -1,0 +1,31 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+# Record name
+name: Defunt
+
+# Model Form Field configuration
+form: $/johl/defuntcode/models/defunt/fields.yaml
+
+# Model Class name
+modelClass: Johl\Defuntcode\Models\Defunt
+
+# Default redirect location
+defaultRedirect: johl/defuntcode/defunts
+
+# Create page
+create:
+    title: backend::lang.form.create_title
+    redirect: johl/defuntcode/defunts/update/:id
+    redirectClose: johl/defuntcode/defunts
+
+# Update page
+update:
+    title: backend::lang.form.update_title
+    redirect: johl/defuntcode/defunts
+    redirectClose: johl/defuntcode/defunts
+
+# Preview page
+preview:
+    title: backend::lang.form.preview_title

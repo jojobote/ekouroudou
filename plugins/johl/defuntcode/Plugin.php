@@ -1,4 +1,6 @@
-<?php namespace Johl\DefuntCode;
+<?php
+
+namespace Johl\DefuntCode;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -33,7 +35,6 @@ class Plugin extends PluginBase
      */
     public function register()
     {
-
     }
 
     /**
@@ -43,7 +44,6 @@ class Plugin extends PluginBase
      */
     public function boot()
     {
-
     }
 
     /**
@@ -82,12 +82,11 @@ class Plugin extends PluginBase
      */
     public function registerNavigation()
     {
-        return []; // Remove this line to activate
 
         return [
             'defuntcode' => [
                 'label'       => 'defuntCode',
-                'url'         => Backend::url('johl/defuntcode/mycontroller'),
+                'url'         => Backend::url('johl/defuntcode/defunts'),
                 'icon'        => 'icon-leaf',
                 'permissions' => ['johl.defuntcode.*'],
                 'order'       => 500,
