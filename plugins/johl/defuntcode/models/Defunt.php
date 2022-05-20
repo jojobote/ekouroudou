@@ -3,11 +3,17 @@
 namespace Johl\DefuntCode\Models;
 
 use Model;
-use Ceremonie;
 
 
 class Defunt extends Model
 {
+    use \October\Rain\Database\Traits\Validation;
+
+    public $rules = [
+        'nom' => 'required',
+        'prenom' => 'required',
+        'description' => 'required'
+    ];
     /**
      * The table associated with the model.
      *
@@ -32,7 +38,7 @@ class Defunt extends Model
     public $description = 'description';
 
     public $belongsTo = [
-        'user' => '\RainLab\User\Models\User'
+        'handler' => '\RainLab\User\Models\User'
     ];
     public $hasOne = [
         // 'recueillement' => '\Johl\DefuntCode\Models\Recueillement',

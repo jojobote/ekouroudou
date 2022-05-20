@@ -4,6 +4,7 @@ namespace Johl\DefuntCode\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
+use Debugbar;
 
 /**
  * Defunts Backend Controller

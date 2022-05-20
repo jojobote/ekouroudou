@@ -9,7 +9,7 @@ name: Defunt
 form: $/johl/defuntcode/models/defunt/fields.yaml
 
 # Model Class name
-modelClass: Johl\Defuntcode\Models\Defunt
+modelClass: Johl\DefuntCode\Models\Defunt
 
 # Default redirect location
 defaultRedirect: johl/defuntcode/defunts

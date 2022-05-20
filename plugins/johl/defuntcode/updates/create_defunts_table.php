@@ -18,8 +18,8 @@ class CreateDefuntsTable extends Migration
             $table->timestamps();
             $table->timestamp('published_at')->nullable();
             $table->boolean('is_published')->default(false);
-            $table->integer('recueillement_id')->unsigned();
-            $table->integer('ceremonie_id')->unsigned();
+            $table->integer('recueillement_id')->unsigned()->nullable();
+            $table->integer('ceremonie_id')->unsigned()->nullable();
 
             $table->foreign('recueillement_id')->references('id')->on('recueillements');
             $table->foreign('ceremonie_id')->references('id')->on('ceremonies');
