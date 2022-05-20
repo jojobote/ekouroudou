@@ -1,0 +1,26 @@
+items:
+    -
+        title: Page1
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: page1
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Page1
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: page1
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: Menu1

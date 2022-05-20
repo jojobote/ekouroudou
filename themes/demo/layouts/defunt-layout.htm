@@ -1,0 +1,28 @@
+[account]
+paramCode = "code"
+forceSecure = 0
+requirePassword = 0
+
+[staticPage]
+useContent = 1
+default = 0
+
+[staticMenu]
+
+[myDefunt]
+==
+<html>
+    <head>
+        <title>{{ this.page.title }}</title>
+    </head>
+    <header>
+        {% for item in staticMenu.menuItems %}
+            <li><a href="{{ item.url }}">{{ item.title }}</a></li>
+        {% endfor %}
+    </header>
+    <body>
+        {% page %}
+        {% component 'account' %}
+        {% component 'myDefunt' %}
+    </body>
+</html>
